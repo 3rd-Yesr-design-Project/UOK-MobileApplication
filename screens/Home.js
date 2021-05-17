@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, View,StyleSheet,TextInput,TouchableOpacity,Image,FlatList} from 'react-native';
-import Posts from './Posts';
+
 
 postSet=[
   {
@@ -63,7 +63,6 @@ export default class Home extends React.Component {
        <Image source = {postSet.avatar} style={styles.avatar}/>
        <View style= {{flex:1}}> 
                <View style ={{flexDirection:"row",justifyContent:"space-between",alignItems:"center"}}>
-
              <View>
                <Text style={styles.name}>{postSet.name}</Text>
                <Text style={styles.timestamp}>{postSet.timestamp}</Text>
@@ -72,12 +71,8 @@ export default class Home extends React.Component {
                <Text style={styles.post}>{postSet.text}</Text>
                <Image source={postSet.image} style={styles.postImage} resizeMode = "cover"></Image>
        </View>
-
-
        </View>
-
-    );
-     
+    ); 
    };
 
 
@@ -96,47 +91,6 @@ export default class Home extends React.Component {
             keyExtractor = {item => item.id}
             showsVerticalScrollIndicator = {false}
            />
-       
-
-      
-        <View style={styles.bar}> 
-        <TouchableOpacity  style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Profile")}>
-           <Image  style={styles.image}source ={ require("../assets/profile.png")}>
-           </Image>
-        </TouchableOpacity>
-        
-        
-
-         <TouchableOpacity style={{margin: 25}}  onPress = {() => this.props.navigation.navigate("Home")}>   
-            <Image style={styles.image} source ={ require("../assets/home.png")}>
-           </Image>
-         </TouchableOpacity>
-         
-            
-         <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Posts")}>
-            <Image style={styles.image} source ={ require("../assets/add.png")}>
-            </Image>
-         </TouchableOpacity>
-         <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Notification")}>
-            <Image style={styles.image}source ={ require("../assets/notification.png")}>
-            </Image>
-         </TouchableOpacity>
-
-        <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Message")}>
-            <Image style={styles.image} source ={ require("../assets/message.png")}>
-            </Image>
-        </TouchableOpacity>  
-        </View>
-        <View style={styles.code} >
-        <View  style={{ flexDirection: "row"}}>
-        <Text style={{color:'black',fontSize:10,marginLeft:25}}>Account</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:45}}>Home</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:55}}>Post</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:42}}>notification</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:30}}>Message</Text>
-        </View>
-        </View>   
-        
 
         </View>
       
