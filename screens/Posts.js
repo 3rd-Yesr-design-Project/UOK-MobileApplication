@@ -17,50 +17,11 @@ export default class Posts extends React.Component {
 
    
         <Text>profggggggile</Text>
-        <Text>ceeggggggear</Text>
+        <Text>ceeggddddggggear</Text>
         <Text>ceeggggear</Text>
-        <Text>gggggg</Text>
-       
-
-      
-        <View style={styles.bar}> 
-        <TouchableOpacity  style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Profile")}>
-           <Image  style={styles.image}source ={ require("../assets/profile.png")}>
-           </Image>
-        </TouchableOpacity>
+        <Text>ggggggeggggeaeggggeaeggggeaeggggeaeggggeaeggggea</Text>
         
-        
-
-        <TouchableOpacity style={{margin: 25}}  onPress = {() => this.props.navigation.navigate("Home")}>   
-            <Image style={styles.image} source ={ require("../assets/home.png")}>
-           </Image>
-         </TouchableOpacity>
-         
-            
-         <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Post")}>
-            <Image style={styles.image} source ={ require("../assets/add.png")}>
-            </Image>
-         </TouchableOpacity>
-         <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Notification")}>
-            <Image style={styles.image}source ={ require("../assets/notification.png")}>
-            </Image>
-         </TouchableOpacity>
-
-        <TouchableOpacity style={{margin: 25}} onPress = {() => this.props.navigation.navigate("Message")}>
-            <Image style={styles.image} source ={ require("../assets/message.png")}>
-            </Image>
-        </TouchableOpacity> 
-        </View>
-        <View style={styles.code} >
-        <View  style={{ flexDirection: "row"}}>
-        <Text style={{color:'black',fontSize:10,marginLeft:25}}>Account</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:45}}>Home</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:55}}>Post</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:42}}>notification</Text>
-        <Text style={{color:'black',fontSize:10,marginLeft:30}}>Message</Text>
-        </View>
-        </View>   
-        
+   
 
         </View>
       
