@@ -14,7 +14,7 @@ import axios from 'axios';
 
 export default class Loging extends React.Component {
   static navigationOptions = {
-    header: null
+    headerShown: true
   };
   state = {
     email: "",
@@ -30,6 +30,9 @@ export default class Loging extends React.Component {
       <View style={styles.container}>
         <StatusBar barStyle="light-content"></StatusBar>
 
+        <View style={styles.header}>
+        <Text style={styles.headerTitle}>Welcome</Text>
+       </View>
         <Image
           source={require("../assets/coverr.jpg")}
           style={{ position: "absolute", marginTop: -5 }}
