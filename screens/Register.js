@@ -21,12 +21,15 @@ export default class Register extends React.Component {
   };
 
   static navigationOptions = {
-    header: null
+ header: null
   };
 
   render() {
     return (
       <View style={styles.container}>
+        <View style={styles.header}>
+        <Text style={styles.headerTitle}>Welcome</Text>
+       </View>
         <StatusBar barStyle="light-content"></StatusBar>
 
         <Image
@@ -43,9 +46,9 @@ export default class Register extends React.Component {
 
         <Text style={styles.greeting}>{"Hello \n Sing Up to get start."}</Text>
 
-        <View style={styles.errorMessage}>
+        {/* <View style={styles.errorMessage}>
           <Text style>{"Error"}</Text>
-        </View>
+        </View> */}
 
         <View style={styles.form}>
           <View>
@@ -97,7 +100,7 @@ export default class Register extends React.Component {
 
         <TouchableOpacity
           style={{ alignSelf: "center", marginTop: 32 }}
-          onPress={() => this.props.navigation.navigate("Loging")}
+          onPress={() => this.props.navigation.navigate("WelCome")}
         >
           <Text style={{ color: "#414959", fontSize: 13 }}>
             {" "}
@@ -178,5 +181,18 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     height: 30
-  }
+  },header:{
+    paddingTop:48,
+    paddingBottom:16,
+    backgroundColor:"#FFF",
+    alignItems:"center",
+    justifyContent:"center",
+    borderBottomWidth:1,
+    borderBottomColor:"#EBECF4",
+    shadowColor:"#454D65",
+    shadowOffset:{height:5},
+    shadowRadius:15,
+    shadowOpacity:0.2,
+    zIndex:10
+  },
 });
